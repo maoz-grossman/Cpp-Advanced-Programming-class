@@ -6,7 +6,7 @@
 using namespace std;
  
 
-void Editor::exchange_wordable(string str, Document &doc)
+  void exchange_wordable(string str, Document &doc)
 { 
     vector <string> tokens; 
     stringstream check1(str); 
