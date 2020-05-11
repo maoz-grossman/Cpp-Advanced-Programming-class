@@ -4,6 +4,7 @@
 #include<algorithm>
 #include<iostream>
 #include<vector>
+#include<array>
 
 template<typename T, size_t n>
 void print_array(T const (&arr)[n])
@@ -50,5 +51,11 @@ int main()
     int ai5[]={1,2,3,10,8,6};
     std::vector<int>vec(100);
     auto p3= Transform(std::begin(ai5), std::end(ai5),vec.begin(),[](const int i, const int j){ return i+j;});
+    int size_ai5= std::end(ai5)- std::begin(ai5);
+   std::cout<<"vec[ ";
+    for(int i=0; i!=(size_ai5/2);++i)
+        std::cout<<vec[i]<<" ";
+    std::cout<<"]"<<std::endl;
     return 0;
+
 }
