@@ -15,10 +15,6 @@ void print_array(T const (&arr)[n])
     std::cout<< "]" <<std::endl;
 }
 
-int Add_Numbers(const int i, const int j)
-{
-    return (i+j);
-}
 
 int main()
 {
